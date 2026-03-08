@@ -73,7 +73,7 @@ export default function App() {
   // to the backend, which relays it to the Zapier chatbot.
   const handleOnboardingComplete = async (formData) => {
     try {
-      const response = await fetch('http://localhost:5000/api/onboarding/submit', {
+     const response = await fetch('/api/onboarding/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
